@@ -1,4 +1,6 @@
 #Text advenature game
+import sys
+
 def start():
     print("""In an old town in Australia, a middle-class family just have a newborn
 baby name Santi, born in 1961 on a rainy night, his family was so happy to meet
@@ -17,10 +19,11 @@ while True:
     first_choice=input("Please enter your choice ").upper()
     if (first_choice =="A") or (first_choice =="B"):
         print ("Game over, try again \n")
-
+        
         start()
     elif (first_choice =="C"):
         break
+        
     else:
         print ("you have enter something else")
         continue
@@ -60,13 +63,13 @@ do you think will happen with his life after this?
 """)
 
 while True:
-    third_choice=input("Please enter your choice ").upper()
-    if (third_choice=="A"):
+    forth_choice=input("Please enter your choice ").upper()
+    if (forth_choice=="A"):
         print ("He became a businessman, try again to see other outcomes \n")
         start()
-    elif (third_choice=="B"):
+    elif (forth_choice=="B"):
         print("He did not find a job after all his years of studies :(, try again to see other outcomes \n")
-    elif (third_choice=="C"):
+    elif (forth_choice=="C"):
         break
     else:
         print ("you have enter something else")
@@ -79,13 +82,111 @@ print("""The mansion caught on fire with the adoptive couple inside it
 """)
 
 while True:
-    third_choice=input("Please enter your choice ").upper()
-    if (third_choice=="A"):
+    fifth_choice=input("Please enter your choice ").upper()
+    if (fifth_choice=="A"):
         continue
-    elif (choice=="B"):
+    elif (fifth_choice=="B"):
+        break
+    else:
+        print ("you have enter something else")
+        
+print(""" The rich couple was sleeping when it happened so they just died inside the mansion
+
+    After the tragedy he discovered that he was adopted
+
+    A) By clues, he found in a case from 1961 about a stolen child never found
+
+    B)By a letter that his adoptive mom wrote him and could only be open when something happens to her or her husband
+
+""")
+while True:
+    sixth_choice=input("Please enter your choice ").upper()
+    if (sixth_choice=="A"):
+        continue
+    elif (sixth_choice=="B"):
         break
     else:
         print ("you have enter something else")
 
+print(""" He started to find his blood family
 
+    A)He flew to Australia to find clues about his blood family
+
+    B)He stayed where he lived and did not find anything about it
+
+
+""")
+while True:
+    seventh_choice=input("Please enter your choice ").upper()
+    if (seventh_choice=="A"):
+        break
+    elif (seventh_choice=="B"):
+        print("Game over")
+        sys.exit()
+        
+    else:
+        print ("you have enter something else")
+
+print(""" He went to the house that his blood family lived(The Gabino). They were not living there anymore
+
+
+    A)He stayed there to keep finding clues about his blood family
+
+    B)He paid a few days in a hotel to find more clues, he started having some dreams
+
+
+
+""")
+while True:
+    eighth_choice=input("Please enter your choice ").upper()
+    if (eighth_choice=="A"):
+        continue
+    elif (eighth_choice=="B"):
+        break
+        
+    else:
+        print ("you have enter something else")
+
+print("""
+    A)The second dream: He dreamed with the name of every member of the family
+
+    B)The first dream: He dreamed with the name of the hospital that he was born
+
+    C)The third dream: was the face of the women who stole him
+""")
+while True:
+    ninth_choice=input("Please enter your choice ").upper()
+    if (ninth_choice=="B") or (sixith_choicr=="C"):
+        continue
+    elif (ninth_choice=="A"):
+        break
+        
+    else:
+        print ("you have enter something else")
+
+
+print("""
+The woman died a few days after she stole him, what do you think happened next?
+With those names he found information about them, he discovered it was a
+middle-class family. After a week of finding clues, he got the address of
+Gabino’s family. He went to find about that address and found them, he told
+them that he was the child they lost
+
+    A)They rejected him because they did not believe him
+
+    B)They accepted him and together they found out that the woman that stole him was because of revenge
+
+""")
+
+while True:
+    tenth_choice=input("Please enter your choice ").upper()
+    if (tenth_choice=="A"):
+        continue
+    elif (tenth_choice=="B"):
+        print("They lived together and happy, he met his new family")
+        print("Congrats, you've beat the game :D")
+        break
+        
+    else:
+        print ("you have enter something else")
 
